@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_20-06-54",
+            "content": "@@ -2471,69 +2471,6 @@\n u)%0A%0A\n-another_kazu.sort()%0Aprint(%22Ordenada:%22, another_kazu.sort())%0A%0A%0A%0A\n %0A%0A\n",
+            "lines": "132"
+        },
+        {
+            "label": "2025-11-11_20-13-00",
+            "content": "@@ -2528,13 +2528,12 @@\n ort())%0A%0A%0A%0A%0A%0A\n-%0A\n",
+            "lines": "137"
+        },
+        {
+            "label": "2025-11-11_23-04-42",
+            "content": "@@ -375,19 +375,16 @@\n insert(1\n-, 3\n )%0Aprint(\n",
+            "lines": "138"
+        },
+        {
+            "label": "2025-11-11_23-05-14",
+            "content": "@@ -813,30 +813,16 @@\n = random\n-%0Aimport random\n %0A%0Asortei\n",
+            "lines": "138"
+        },
+        {
+            "label": "2025-11-11_23-05-39",
+            "content": "@@ -849,17 +849,16 @@\n andom.ra\n-n\n dint(1,5\n",
+            "lines": "139"
+        },
+        {
+            "label": "2025-11-11_23-05-50",
+            "content": "@@ -49,14 +49,8 @@\n alor\n- : int\n ) :%0A\n",
+            "lines": "139"
+        },
+        {
+            "label": "2025-11-11_23-09-51",
+            "content": "@@ -1887,93 +1887,8 @@\n a)%0A%0A\n-lista = bingo.sort(reverse = True)%0Anew = sorted(bingo, reverse = True)%0Aprint(lista)%0A%0A\n #emb\n",
+            "lines": "139"
+        },
+        {
+            "label": "2025-11-12_16-58-56",
+            "content": "@@ -1,2690 +1,90 @@\n-#ARRAYS%0A%0Aclass friends:%0A    def __init__(self, valor : int) :%0A        self.valor = valor %0A%0Aamigos = %5B%5D%0A%0Abingo = %5B3, 17, 21, 45, 2, 4, 89, 65%5D%0A%0Aobejtos =%5Bfriends(10), friends(6)%5D%0A%0Atamanho = len(bingo)%0Aprint(tamanho) %0A#8%0A%0A#adicionar = .append%0A#remover = pop%0A%0Abingo.append(87)%0Abingo.pop()%0Aprint(bingo)%0A%0A#adicionar no in%C3%ADcio = .insert%0A#remover do in%C3%ADcio = .pop(0)%0A%0Abingo.pop(0)%0Abingo.insert(1, 3)%0Aprint(bingo)%0A%0A#adicionar em uma posi%C3%A7%C3%A3o espec%C3%ADfica = .insert(indice,numero/string)%0A#remover de uma posi%C3%A7%C3%A3o espec%C3%ADfica = .pop(indice)%0A%0Abingo.insert(5,77)%0Abingo.pop(4)%0A%0A#utilizando o join = junta elementos de uma lista de STRINGS%0A%0Acores = %5B%22amarelo%22, %22vermelhor%22, %22azul%22, %22verde%22%5D%0Aprint(%22, %22.join(cores))%0A%0A#criar um array de uma sequencia de numeros = range()%0A%0Aamarelinha = list(range(11))%0A%0A#criar array com valores aleat%C3%B3rios = random%0Aimport random%0A%0Asorteio = %5Brandom.randint(1,50) for _ in range(3)%5D%0A%0A#acessar elemento por %C3%ADndice %0A#%5B0%5D = primeiro%0A#%5B-1%5D = %C3%BAltimo%0A%0A#percorrer elementos usando for range%0A%0Afor i in range(len(bingo)):%0A    print(f%22Indice %7Bi%7D : %7Bbingo%5Bi%5D%7D%22)%0A%0A%0A#percorrer elemtos usando for direto%0A%0Afor n in bingo:%0A    print(n)%0A%0A#procurar um elemento X usando la%C3%A7o%0A%0A#criar um novo array com elementos filtrados (pares)%0A%0Apares = %5Bn for n in bingo if n%25 2 == 0%5D%0A%0A#criar um novo array com elementos transformados (ao quadrado)4%0A%0Aelevado = %5Bn**2 for n in bingo%5D%0A%0A#buscar e remover um elemento em espec%C3%ADfico :%0Ax = 80%0Aif x in bingo:%0A    bingo.remover(x)%0A%0A#remover todos os elementos com um valor em espec%C3%ADfico%0A%0Ay = 17%0A%0Abuscar = %5Bn for n in bingo if n != x%5D%0A%0A#organizar a lista em ordem crescente%0A%0Aidades = %5B7, 87, 20, 4, 35, 12, 13, 24%5D%0A%0Aidades.sort()%0Aprint(idades)%0A%0A#organizar a lista em ordem decrescente%0A%0Aidades.sort(reverse = True)%0Aprint(idades)%0A%0A# o sort manipula a lista original%0A%0A#cria uam nova lista ordenada sem modificar a lista original%0Anova_lista = sorted(bingo)%0Aprint(nova_lista)%0A%0Alista = bingo.sort(reverse = True)%0Anew = sorted(bingo, reverse = True)%0Aprint(lista)%0A%0A#embaralhar os elementos da lista aleatoriamente / modifica a lista original%0Aimport random%0Arandom.shuffle(idades)%0A%0Abaralho = %5B%22%C3%81s de Ouros%22, %22Rei de Copas%22, %22Rainha de Espadas%22, %22Valete de Paus%22%5D%0Arandom.shuffle(baralho)%0A%0Acartas = baralho%0A%0Arandom.shuffle(cartas)%0A%0Akazu = %5B7, 1, 17, 13, 21, 25, 30, 4, 10%5D%0A%0Aposicao = kazu.index(17)%0Aprint(posicao)%0A%0A#se o valor nao existir ele gera um erro de ValueError%0A#pra isso %C3%A9 necessario usar um if/ else%0A%0Aif 17 in kazu:%0A    print(kazu.index(17))%0Aelse:%0A    print(%22Valor n%C3%A3o encontrado%22)%0A%0A#remover todos os elementos de uma lista/ esvazia%0A%0Aanother_kazu =%5B1, 2, 3 , 4 , 5%5D%0Aanother_kazu.clear()%0Aprint(another_kazu)%0A%0Aanother_kazu.sort()%0Aprint(%22Ordenada:%22, another_kazu.sort())%0A%0A%0A%0A%0A%0A\n+@@ -2193,49 +2193,8 @@%0A o)%250A%250A%0A-cartas = baralho%250A%250Arandom.shuffle(cartas)%250A%0A %250Akaz\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-12_17-12-32",
+            "content": "@@ -2683,765 +2683,8 @@\n )%0A%0A%0A\n-#append - insere um elemento no array (final)%0A#.pop - remove um elemento do array / abre parenteses para retirar de uma posi%C3%A7%C3%A3o em espec%C3%ADfica%0A#.index() - referente ao conteudo do elemento%0A#.clear - removetodos os elementos do arrays%0A#.join /STRING - adiciona um elemento no array (final)%0A#random.randint() - cria um novo array de elementos em sequencia%0A#.sort - organiza os elementos do array em ordem crescente%0A#.sort(reverse = True) - organiza os elementos em ordem descrescente%0A#sorted() - cria um novo array com os elementos organizados em forma crescente%0A#sorted(nomeDoArray, reverse = True) - cria um novo array com os elementos organizados em forma decrescente%0A#random.shuffle - modifica o array original e organiza os elementos de forma aleat%C3%B3ria%0A%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "146"
+        },
+        {
+            "label": "2025-11-12_17-21-04",
+            "content": "@@ -142,10 +142,10 @@\n %0A%0Aob\n-j\n e\n+j\n tos \n@@ -212,92 +212,8 @@\n ho) \n-%0A%0Acompras = %5B%22uva%22, %22pao%22, %22feijao%22, %22omo%22, %22frango%22%5D%0A%0Acpr = len(compras)%0Aprint(cpr)\n %0A#8%0A\n",
+            "lines": "159"
+        },
+        {
+            "label": "2025-11-12_17-26-42",
+            "content": "#ARRAYS\n\nclass friends:\n    def __init__(self, valor : int) :\n        self.valor = valor \n\namigos = []\n\nbingo = [3, 17, 21, 45, 2, 4, 89, 65]\n\nobjetos =[friends(10), friends(6)]\n\ntamanho = len(bingo)\nprint(tamanho) \n\ncompras = [\"uva\", \"pao\", \"feijao\", \"omo\", \"frango\"]\n\ncpr = len(compras)\nprint(cpr)\n#8\n\n#adicionar = .append\n#remover = pop\n\nbingo.append(87)\nbingo.pop()\nprint(bingo)\n\n#adicionar no in\u00edcio = .insert\n#remover do in\u00edcio = .pop(0)\n\nbingo.pop(0)\nbingo.insert(1, 3)\nprint(bingo)\n\n#adicionar em uma posi\u00e7\u00e3o espec\u00edfica = .insert(indice,numero/string)\n#remover de uma posi\u00e7\u00e3o espec\u00edfica = .pop(indice)\n\nbingo.insert(5,77)\nbingo.pop(4)\n\n#utilizando o join = junta elementos de uma lista de STRINGS\n\ncores = [\"amarelo\", \"vermelhor\", \"azul\", \"verde\"]\nprint(\", \".join(cores))\n\n#criar um array de uma sequencia de numeros = range()\n\namarelinha = list(range(11))\n\n#criar array com valores aleat\u00f3rios = random\nimport random\n\nsorteio = [random.randint(1,50) for _ in range(3)]\n\n#acessar elemento por \u00edndice \n#[0] = primeiro\n#[-1] = \u00faltimo\n\n#percorrer elementos usando for range\n\nfor i in range(len(bingo)):\n    print(f\"Indice {i} : {bingo[i]}\")\n\n\n#percorrer elemtos usando for direto\n\nfor n in bingo:\n    print(n)\n\n#procurar um elemento X usando la\u00e7o\n\n#criar um novo array com elementos filtrados (pares)\n\npares = [n for n in bingo if n% 2 == 0]\n\n#criar um novo array com elementos transformados (ao quadrado)4\n\nelevado = [n**2 for n in bingo]\n\n#buscar e remover um elemento em espec\u00edfico :\nx = 80\nif x in bingo:\n    bingo.remover(x)\n\n#remover todos os elementos com um valor em espec\u00edfico\n\ny = 17\n\nbuscar = [n for n in bingo if n != x]\n\n#organizar a lista em ordem crescente\n\nidades = [7, 87, 20, 4, 35, 12, 13, 24]\n\nidades.sort()\nprint(idades)\n\n#organizar a lista em ordem decrescente\n\nidades.sort(reverse = True)\nprint(idades)\n\n# o sort manipula a lista original\n\n#cria uam nova lista ordenada sem modificar a lista original\nnova_lista = sorted(bingo)\nprint(nova_lista)\n\nlista = bingo.sort(reverse = True)\nnew = sorted(bingo, reverse = True)\nprint(lista)\n\n#embaralhar os elementos da lista aleatoriamente / modifica a lista original\nimport random\nrandom.shuffle(idades)\n\nbaralho = [\"\u00c1s de Ouros\", \"Rei de Copas\", \"Rainha de Espadas\", \"Valete de Paus\"]\nrandom.shuffle(baralho)\n\ncartas = baralho\n\nrandom.shuffle(cartas)\n\nkazu = [7, 1, 17, 13, 21, 25, 30, 4, 10]\n\nposicao = kazu.index(17)\nprint(posicao)\n\n#se o valor nao existir ele gera um erro de ValueError\n#pra isso \u00e9 necessario usar um if/ else\n\nif 17 in kazu:\n    print(kazu.index(17))\nelse:\n    print(\"Valor n\u00e3o encontrado\")\n\n#remover todos os elementos de uma lista/ esvazia\n\nanother_kazu =[1, 2, 3 , 4 , 5]\nanother_kazu.clear()\nprint(another_kazu)\n\nanother_kazu.sort()\nprint(\"Ordenada:\", another_kazu.sort())\n\n\n#append - insere um elemento no array (final)\n#.pop - remove um elemento do array / abre parenteses para retirar de uma posi\u00e7\u00e3o em espec\u00edfica\n#.index() - referente ao conteudo do elemento\n#.clear - removetodos os elementos do arrays\n#.join /STRING - adiciona um elemento no array (final)\n#random.randint() - cria um novo array de elementos em sequencia\n#.sort - organiza os elementos do array em ordem crescente\n#.sort(reverse = True) - organiza os elementos em ordem descrescente\n#sorted() - cria um novo array com os elementos organizados em forma crescente\n#sorted(nomeDoArray, reverse = True) - cria um novo array com os elementos organizados em forma decrescente\n#random.shuffle - modifica o array original e organiza os elementos de forma aleat\u00f3ria\n\n\n\n\n\n\n",
+            "lines": "164"
+        }
+    ]
+}
