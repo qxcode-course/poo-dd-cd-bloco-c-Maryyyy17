@@ -81,7 +81,7 @@ elevado = [n**2 for n in bingo]
 #buscar e remover um elemento em específico :
 x = 80
 if x in bingo:
-    bingo.remover(x)
+    bingo.remove(x)
 
 #remover todos os elementos com um valor em específico
 
@@ -112,7 +112,7 @@ new = sorted(bingo, reverse = True)
 print(lista)
 
 #embaralhar os elementos da lista aleatoriamente / modifica a lista original
-import random
+
 random.shuffle(idades)
 
 baralho = ["Ás de Ouros", "Rei de Copas", "Rainha de Espadas", "Valete de Paus"]
