@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-12_21-49-27",
+            "content": "@@ -276,27 +276,16 @@\n xas \n-: list%5BClient%7CNone%5D\n+= caixas\n %0A   \n@@ -339,32 +339,39 @@\n f __str__(self) \n+-%3E str \n :%0A        if sel\n@@ -370,109 +370,6 @@\n   if\n- self.__caixas == None%0A            return f%22Caixas :%7Bself.__caixas%7D%5Cn Espera : %7Blist%5BClient%5D%7D%22%0A    %0A   \n  %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-12_21-55-57",
+            "content": "@@ -291,21 +291,16 @@\n nt%7CNone%5D\n- = %5B%5D\n %0A       \n@@ -389,14 +389,10 @@\n xas \n-is not\n+==\n  Non\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-12_22-14-26",
+            "content": "@@ -367,14 +367,8 @@\n lf) \n--%3E str\n :%0A  \n@@ -394,29 +394,30 @@\n xas \n-: list%5B\n+is not \n None\n-%5D\n %0A\n+  \n         \n retu\n@@ -404,32 +404,34 @@\n  None%0A          \n+  \n return f%22Caixas%0A\n@@ -429,14 +429,63 @@\n f%22Caixas\n+ :%7Bself.__caixas%7D%5Cn Espera : %7Blist%5BClient%5D%7D%22%0A    \n %0A    %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-14_00-31-39",
+            "content": "@@ -1,308 +1,38 @@\n-class Client:%0A    def __init__(self, name : str) : %0A        self.__name = name%0A%0A    def __toString__(self) :%0A        return f%22%7Bself.__name%7D%22%0A    %0A    def getName(self) :%0A        return self.__name%0A    %0Aclass Market :%0A    def __init__ (self, caixas : int) :%0A        self.__caixas : list%5BClient%7CNone%5D = %5B%5D%0A\n+@@ -301,80 +301,8 @@%0A  %255B%255D%250A%0A-\n     \n@@ -59,17 +59,19 @@\n aixas) :\n-%0A\n+%250A\n         \n@@ -104,30 +104,49 @@\n one)\n+%250A\n %0A     \n-   self.\n+%0A@@ -318,17 +318,16 @@%0A \n __fila :\n  lis\n@@ -145,65 +145,112 @@\n la :\n+%0A- %0A\n  list\n-%5BClient%5D = %5B%5D%0A    %0A    def __str__ (self) :%0A   \n+%255BCli%0A@@ -360,16 +360,21 @@%0A tr__%0A- %0A (self) %0A+-%253E str%0A :%250A  %0A@@ -383,109 +383,61 @@%0A\n      \n+%0A-\n caix\n@@ -258,25 +258,35 @@\n s = \n-%22,%22.join(%5B%22\n+%2522,%2522.join(%255B%2522\n -----\n-%22\n+%2522\n  if \n@@ -333,11 +333,15 @@\n ixas\n-%5D)%0A\n+%255D)%250A\n     \n@@ -355,19 +355,91 @@\n a = \n-%22,%22.join%0A%0A \n+%2522,%2522.join%250A%0A+if self.__caixas : list%255BNone%255D%250A        return f%2522Caixas%0A %250A\n    %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-14_00-38-39",
+            "content": "@@ -1,560 +1,37 @@\n-class Client:%0A    def __init__(self, name : str) : %0A        self.__name = name%0A%0A    def __toString__(self) :%0A        return f%22%7Bself.__name%7D%22%0A    %0A    def getName(self) :%0A        return self.__name%0A    %0Aclass Market :%0A    def __init__ (self, caixas : int) :%0A        self.__caixas : list%5BClient%7CNone%5D = %5B%5D%0A        for i in range(caixas) :%0A            self.__caixas.append(None)%0A        self.__fila : list%5BClient%5D = %5B%5D%0A    %0A    def __str__ (self) :%0A        caixas = %22,%22.join(%5B%22-----%22 if a == None else str(a) for a in self.__caixas%5D)%0A        fila = %22,%22.join(%5B\n+@@ -551,161 +551,8 @@%0A join%0A-(%255B\n str(\n@@ -57,11 +57,15 @@\n fila\n-%5D)%0A\n+%255D)%250A\n     \n@@ -80,17 +80,19 @@\n rn f\n-%22\n+%2522\n Caixas: \n %5B%7Bca\n@@ -91,43 +91,65 @@\n as: \n-%5B%7Bcaixas%7D%5D/nEspera: %5B%7Bfila%7D%5D%22%0A\n+%255B%257Bcaixas%257D%255D/nEspera: %255B%257Bfila%257D%255D%2522%250A\n     \n-%0A\n+%250A\n     \n@@ -187,177 +187,19 @@\n t) :\n-%0A        self.__fila.append(pessoa)%0A%0A    def call(self, index : int) :%0A        if self.__fila == %5B%5D :%0A            print(%22fail: sem clientes%22)%0A            return%0A\n+%250A\n         \n if s\n@@ -198,226 +198,28 @@\n     \n-if \n self.\n-__caixas%5Bindex%5D != None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A        self.__caixas%5Bindex%5D = self.__fila%5B0%5D%0A        del self.__fila%5B0%5D%0A%0A    def finish (self, index : int) :%0A        if %0A%0A  \n+wainting%0A %250A%250A\n   %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_00-44-32",
+            "content": "@@ -1,1080 +1,44 @@\n-class Client:%0A    def __init__(self, name : str) : %0A        self.__name = name%0A%0A    def __toString__(self) :%0A        return f%22%7Bself.__name%7D%22%0A    %0A    def getName(self) :%0A        return self.__name%0A    %0Aclass Market :%0A    def __init__ (self, caixas : int) :%0A        self.__caixas : list%5BClient%7CNone%5D = %5B%5D%0A        for i in range(caixas) :%0A            self.__caixas.append(None)%0A        self.__fila : list%5BClient%5D = %5B%5D%0A    %0A    def __str__ (self) :%0A        caixas = %22,%22.join(%5B%22-----%22 if a == None else str(a) for a in self.__caixas%5D)%0A        fila = %22,%22.join(%5Bstr(a) for a in self.__fila%5D)%0A        return f%22Caixas: %5B%7Bcaixas%7D%5D/nEspera: %5B%7Bfila%7D%5D%22%0A    %0A    def arrive (self, pessoa: Client) :%0A        self.__fila.append(pessoa)%0A%0A    def call(self, index : int) :%0A        if self.__fila == %5B%5D :%0A            print(%22fail: sem clientes%22)%0A            return%0A        if self.__caixas%5Bindex%5D != None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A        self.__caixas%5Bindex%5D = self.__fila%5B0%5D%0A        del self.__fila%5B0%5D%0A%0A    def finish (self, index : int) :%0A      \n+@@ -1066,260 +1066,8 @@%0A\n   if \n+%0A-\n index \n-%3C\n+%253C\n  0 o\n@@ -49,9 +49,11 @@\n dex \n-%3E\n+%253E\n = le\n@@ -70,17 +70,19 @@\n aixas) :\n-%0A\n+%250A\n         \n@@ -87,25 +87,27 @@\n       print(\n-%22\n+%2522\n fail: caixa \n@@ -117,19 +117,23 @@\n xistente\n-%22)%0A\n+%2522)%250A\n         \n@@ -134,33 +134,35 @@\n           return\n-%0A\n+%250A\n         if self.\n@@ -169,23 +169,27 @@\n __caixas\n-%5B\n+%255B\n index\n-%5D\n+%255D\n  == None\n@@ -190,17 +190,19 @@\n = None :\n-%0A\n+%250A\n         \n@@ -211,17 +211,19 @@\n   print(\n-%22\n+%2522\n fail : c\n@@ -232,19 +232,23 @@\n xa vazio\n-%22)%0A\n+%2522)%250A\n         \n@@ -257,17 +257,19 @@\n   return\n-%0A\n+%250A\n         \n@@ -285,331 +285,46 @@\n ixas\n-%5B\n+%255B\n index\n-%5D\n+%255D\n  = None\n-%0A%0Adef main() :%0A    mercado = Market (0)%0A%0A    while True :%0A        line = input()%0A        args : list%5Bstr%5D = line.split(%22 %22)%0A        print(%22$%22 + line)%0A%0A        if args %5B0%5D == %22end%22 :%0A            break%0A        elif args%5B0%5D == %22show%22 :%0A            print(mercado)%0A        elif args%5B0%5D == %22init%22 :%0A            %0A%0A%0A  \n+%250A%250A    def%0A %250A%250A\n   %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_00-50-16",
+            "content": "@@ -1614,330 +1614,8 @@\n     \n-person = int(args%5B1%5D)%0A            mercado.arrive(person)%0A        elif args%5B0%5D == %22call%22 :%0A            fila = int(args%5B1%5D)%0A            mercado.call(fila)%0A        elif args%5B0%5D == %22finish%22 :%0A            finalizar = int(args%5B1%5D)%0A            mercado.finish(finalizar)%0A        else :%0A            print(%22fail: comando inv%C3%A1lido%22)%0A\n %0A%0A%0A \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-14_00-54-29",
+            "content": "@@ -1594,24 +1594,58 @@\n == %22init%22 :%0A\n+            person = int(args%5B1%5D)%0A\n             \n@@ -1661,20 +1661,20 @@\n rrive(pe\n-ssoa\n+rson\n )%0A      \n",
+            "lines": "71"
+        }
+    ]
+}
