@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-18_19-23-46",
+            "content": "class Lead :\n    def __init__(self, hardness : str, thickness : float, size : int) :\n        self.__hardness = hardness\n        self.__thickness = thickness\n        self.__size = size\n\n    def __string__(self) :\n        return f\"<[{self.__hardness}:{self.__thickness:{self.__size}]}\"\n    \n    def usagePerSheet(self) -> int:\n\n\n",
+            "lines": "12"
+        }
+    ]
+}

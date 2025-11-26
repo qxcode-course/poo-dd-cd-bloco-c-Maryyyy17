@@ -21,7 +21,8 @@ class Market :
         return f"Caixas: [{caixas}]/nEspera: [{fila}]"
     
     def arrive (self, pessoa: Client) :
-        self.__fila.append(pessoa)
+        person = pessoa
+        self.__fila.append(person)
 
     def call(self, index : int) :
         if self.__fila == [] :
